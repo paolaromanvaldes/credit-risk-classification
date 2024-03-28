@@ -2,26 +2,14 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+In this credit-risk report challenge, I have built a machine learning model that predicts whether a loan is high risk or low risk at the moment. The purpose of this analysis would be to predict the reliability of the borrower before they default on payments. I used linear regression and made a learning model that can divide loans into two categories, low risk or high risk loans. 
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
+
 
 ## Results
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
-
-* Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
+The model seems to be relatively accurate although the data seems to be skewed towards low risk loans. The given data included 75,036 results for low risk loans and 2500 for high risk loans leading the model to be more skewed towards low risk loans. Out of all the loans, the recall for healthy loans was 1% and the recall for high risk loans was 9%.  
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+While the model is not completely accurate, 85 percent is a usable metric for predictions on high risk loans. I would recommend the model for very unoffical use, more as a light assessment on whether the borrower will be high risk. I would not make any executive decisions on high risk loans due to the precision being under 98 percent. 
